@@ -115,14 +115,17 @@ export default function Home() {
           </div>
         </section>
 
-        
+        <div id="about" className="relative -top-28 h-0" aria-hidden="true"></div>
+<section className="mb-10">
         <section id="about" className="bg-white p-6 shadow-lg rounded-2xl mb-10">
           <h2 className="text-2xl font-bold mb-4">About Us</h2>
           <p className="mb-2">Summit Home Services LLC is a family-owned and operated business dedicated to improving the comfort and safety of your home. With years of experience in air duct, dryer vent, and chimney cleaning, we use top-quality equipment and proven techniques to deliver outstanding results every time.</p>
           <p className="mb-2">Our mission is to provide cleaner air, reduce fire hazards, and extend the life of your HVAC systems. We take pride in our integrity, customer service, and professionalism—values that guide every job we take on.</p>
           <p>Whether it's your first service or you're a returning customer, we treat your home like our own. Trust Summit Home Services to help you breathe easier and live safer.</p>
         </section>
-                  
+
+                  <div id="why-us" className="relative -top-28 h-0" aria-hidden="true"></div>
+<section className="mb-10">
       <section id="why-us" className="bg-white p-6 shadow-lg rounded-2xl mb-10">
         <h2 className="text-2xl font-bold mb-4">Why Choose Us?</h2>
         <div className="grid md:grid-cols-3 gap-4">
@@ -141,6 +144,8 @@ export default function Home() {
         </div>
       </section>
 
+                  <div id="blog" className="relative -top-28 h-0" aria-hidden="true"></div>
+<section className="mb-10">
       <section id="blog" className="bg-white p-6 shadow-lg rounded-2xl mb-10">
         <h2 className="text-2xl font-bold mb-4">From Our Blog</h2>
         <div className="space-y-6">
@@ -187,6 +192,8 @@ export default function Home() {
         </blockquote>
       </section>
 
+            <div id="service-areas" className="relative -top-28 h-0" aria-hidden="true"></div>
+<section className="mb-10">
       <section id="service-areas" className="bg-white p-6 shadow-lg rounded-2xl mb-10">
         <h2 className="text-2xl font-bold mb-4">Service Area</h2>
         <p className="mb-4">We proudly serve the greater New York City area including Queens, Brooklyn, the Bronx, and Nassau County.</p>
@@ -202,6 +209,8 @@ export default function Home() {
         </iframe>
       </section>
 
+            <div id="contact" className="relative -top-28 h-0" aria-hidden="true"></div>
+<section className="mb-10">
       <section id="contact" className="p-6 border rounded-2xl">
         <h2 className="text-2xl font-bold mb-4">Get a Free Estimate</h2>
         <form className="grid gap-4">
