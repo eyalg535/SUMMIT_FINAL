@@ -217,7 +217,8 @@ export default function Home() {
 
       <section id="contact-info" className="p-6 border rounded-2xl mt-10">
         <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
-        <p className="mb-2 text-gray-700">Email: <a href="mailto:summitservicesnyc@gmail.com" className="text-blue-600 hover:underline">info@summitservices.com</a></p>
+        <p className="mb-2 text-gray-700">Email: <a href="mailto:summitservicesnyc@gmail.com" className="text-blue-600 hover:underline">summitservicesnyc@gmail.com
+</a></p>
         <p className="text-gray-700">Phone: <a href="tel:+16462502358" className="text-blue-600 hover:underline">(646) 250-2358</a></p>
       </section>
     </main>
