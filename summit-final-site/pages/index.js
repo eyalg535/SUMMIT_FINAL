@@ -103,13 +103,13 @@ export default function Home() {
               <p>Reduce fire risk and boost dryer performance with regular vent maintenance.</p>
             </div>
             <div className="bg-white shadow-md rounded-2xl p-4">
-              <img
-                src="/chimney.jpeg"
-                alt="Chimney Services"
-                width={300}
-                height={900}
-                className="rounded-xl mb-2"
-              />
+              <div className="w-[300px] h-[200px] overflow-hidden rounded-xl mb-2">
+  <img
+    src="/chimney.jpg"
+    alt="Chimney Services"
+    className="w-full h-full object-cover"
+  />
+</div>
               <h3 className="text-xl font-semibold mb-2">Chimney Services & Repair</h3>
               <p>Certified chimney sweeping and expert repair services to keep your home safe, your chimney clear, and in top condition.</p>
             </div>
