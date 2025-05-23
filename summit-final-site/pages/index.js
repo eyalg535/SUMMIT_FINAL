@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+
 import { useState } from 'react';
 
 export default function Home() {
@@ -40,5 +41,184 @@ export default function Home() {
     };
   }, []);
 
-  return <></>;  // Truncated for brevity; real content is in your canvas
+  return (
+    <>
+      <header className="bg-white shadow-md py-4 px-6 flex items-center justify-between sticky top-0 z-50">
+        <div className="flex items-center space-x-4">
+          <img src="/logo.png" alt="Logo" className="w-10 h-10" />
+          <span className="font-bold text-lg text-gray-800">Summit Home Services</span>
+        </div>
+        <div className="md:hidden">
+          <button id="menu-button" className="text-gray-700 focus:outline-none">
+            ☰
+          </button>
+        </div>
+        <nav id="navbar" className="hidden md:flex space-x-6 text-gray-700 font-medium">
+          <a href="#home" className="hover:text-blue-600">Home</a>
+          <a href="#services" className="hover:text-blue-600">Services</a>
+          <a href="#about" className="hover:text-blue-600">About</a>
+          <a href="#blog" className="hover:text-blue-600">Blog</a>
+          <a href="#service-areas" className="hover:text-blue-600">Service Areas</a>
+          <a href="#contact-info" className="hover:text-blue-600">Contact Us</a>
+          <a href="#contact" className="hover:text-blue-600">Free Estimate</a>
+        </nav>
+        <div id="mobile-menu" className="md:hidden hidden flex-col absolute top-16 left-0 w-full bg-white shadow-md px-6 py-4 space-y-2">
+          <a href="#home" className="block hover:text-blue-600">Home</a>
+          <a href="#services" className="block hover:text-blue-600">Services</a>
+          <a href="#about" className="block hover:text-blue-600">About</a>
+          <a href="#blog" className="block hover:text-blue-600">Blog</a>
+          <a href="#service-areas" className="block hover:text-blue-600">Service Areas</a>
+          <a href="#contact" className="block hover:text-blue-600">Contact Us</a>
+        </div>
+        
+      </header>
+  <main id="home" className="p-6 max-w-4xl mx-auto scroll-smooth">
+      
+      
+      
+
+      <section id="services" className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+        <div className="bg-white shadow-md rounded-2xl p-4">
+          <img
+            src="/mock-duct.jpg"
+            alt="Air Duct Cleaning"
+            width={300}
+            height={200}
+            className="rounded-xl mb-2"
+          />
+          <h2 className="text-xl font-semibold mb-2">Air Duct Cleaning</h2>
+          <p>Improve indoor air quality and HVAC efficiency with expert duct cleaning.</p>
+        </div>
+        <div className="bg-white shadow-md rounded-2xl p-4">
+          <img
+            src="/mock-dryer.jpg"
+            alt="Dryer Vent Cleaning"
+            width={300}
+            height={200}
+            className="rounded-xl mb-2"
+          />
+          <h2 className="text-xl font-semibold mb-2">Dryer Vent Cleaning</h2>
+          <p>Reduce fire risk and boost dryer performance with regular vent maintenance.</p>
+        </div>
+        <div className="bg-white shadow-md rounded-2xl p-4">
+          <img
+            src="/mock-chimney.jpg"
+            alt="Chimney Services"
+            width={300}
+            height={200}
+            className="rounded-xl mb-2"
+          />
+          <h2 className="text-xl font-semibold mb-2">Chimney Services & Repair</h2>
+          <p>Certified chimney sweeping and expert repair services to keep your home safe, your chimney clear, and in top condition.</p>
+        </div>
+      </section>
+
+      <section id="about" className="bg-gray-100 p-6 rounded-2xl mb-10">
+        <h2 className="text-2xl font-bold mb-4">About Us</h2>
+        <p className="mb-4 text-gray-700">Summit Home Services LLC is a family-owned and operated business dedicated to improving the comfort and safety of your home. With years of experience in air duct, dryer vent, and chimney cleaning, we use top-quality equipment and proven techniques to deliver outstanding results every time.</p>
+        <p className="mb-4 text-gray-700">Our mission is to provide cleaner air, reduce fire hazards, and extend the life of your HVAC systems. We take pride in our integrity, customer service, and professionalism—values that guide every job we take on.</p>
+        <p className="text-gray-700">Whether it's your first service or you're a returning customer, we treat your home like our own. Trust Summit Home Services to help you breathe easier and live safer.</p>
+      </section>
+
+      <section id="why-us" className="bg-gray-100 p-6 rounded-2xl mb-10">
+        <h2 className="text-2xl font-bold mb-4">Why Choose Us?</h2>
+        <div className="grid md:grid-cols-3 gap-4">
+          <div className="flex items-start space-x-3">
+            <span className="text-blue-600 text-2xl">✅</span>
+            <p>Licensed & EPA Lead-Safe Certified</p>
+          </div>
+          <div className="flex items-start space-x-3">
+            <span className="text-blue-600 text-2xl">🚀</span>
+            <p>Fast, Reliable, and Affordable Service</p>
+          </div>
+          <div className="flex items-start space-x-3">
+            <span className="text-blue-600 text-2xl">💯</span>
+            <p>100% Satisfaction Guarantee</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="blog" className="bg-white p-6 shadow-lg rounded-2xl mb-10">
+        <h2 className="text-2xl font-bold mb-4">From Our Blog</h2>
+        <div className="space-y-6">
+          <article id="blog1">
+            <h3 className="text-xl font-semibold text-blue-700">Top 5 Benefits of Air Duct Cleaning</h3>
+            <p className="text-gray-700 text-sm mt-2">
+              Learn why regular duct cleaning improves air quality, lowers energy bills, and extends HVAC life.
+              <button onClick={() => (() => { setExpanded(expanded === 'blog1' ? null : 'blog1'); document.getElementById('blog1')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); })()} className="ml-2 text-blue-500 hover:underline">{expanded === 'blog1' ? 'Read less' : 'Read more'}</button>
+            </p>
+            {(expanded === 'blog1') && (
+              <p className="text-sm text-gray-600 mt-2 transition-all duration-300 ease-in-out">Regular air duct cleaning helps improve indoor air quality by reducing dust, pollen, and other allergens circulating through your home. It enhances HVAC efficiency, lowers energy costs, removes unpleasant odors, and extends the system's life span. Clean ducts also promote healthier breathing environments for allergy sufferers and children.</p>
+            )}
+          </article>
+          <article id="blog2">
+            <h3 className="text-xl font-semibold text-blue-700">How Often Should You Clean Your Dryer Vent?</h3>
+            <p className="text-gray-700 text-sm mt-2">
+              Prevent fire hazards and keep your dryer efficient with these expert tips.
+              <button onClick={() => (() => { setExpanded(expanded === 'blog2' ? null : 'blog2'); document.getElementById('blog2')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); })()} className="ml-2 text-blue-500 hover:underline">{expanded === 'blog2' ? 'Read less' : 'Read more'}</button>
+            </p>
+            {(expanded === 'blog2') && (
+              <p className="text-sm text-gray-600 mt-2 transition-all duration-300 ease-in-out">Dryer vents should be cleaned at least once a year to prevent dangerous lint buildup that can lead to house fires. Regular cleaning increases efficiency, reduces drying time, and lowers energy bills. Homes with pets, large families, or frequent laundry cycles may benefit from cleaning every six months.</p>
+            )}
+          </article>
+          <article id="blog3">
+            <h3 className="text-xl font-semibold text-blue-700">Signs Your Chimney Needs Repair</h3>
+            <p className="text-gray-700 text-sm mt-2">
+              Learn how to spot common chimney issues before they become costly problems.
+              <button onClick={() => (() => { setExpanded(expanded === 'blog3' ? null : 'blog3'); document.getElementById('blog3')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); })()} className="ml-2 text-blue-500 hover:underline">{expanded === 'blog3' ? 'Read less' : 'Read more'}</button>
+            </p>
+            {(expanded === 'blog3') && (
+              <p className="text-sm text-gray-600 mt-2 transition-all duration-300 ease-in-out">Look for signs such as crumbling mortar, water stains on interior walls, smoky odors, smoke backdrafts, or visible cracks in the chimney. Regular inspections by certified professionals help identify structural issues, moisture problems, and blockage hazards that could lead to carbon monoxide risks or fire hazards.</p>
+            )}
+          </article>
+        </div>
+      </section>
+
+      <section id="testimonials" className="bg-gray-50 p-6 rounded-2xl mb-10">
+        <h2 className="text-2xl font-bold mb-4">What Our Clients Say</h2>
+        <blockquote className="text-gray-700 italic border-l-4 border-blue-600 pl-4 mb-4">
+          “Summit Home Services cleaned our ducts thoroughly and professionally. We noticed the air was fresher immediately!” — Sarah M.
+        </blockquote>
+        <blockquote className="text-gray-700 italic border-l-4 border-blue-600 pl-4">
+          “Fast and reliable! Our dryer runs like new again. Highly recommend.” — James R.
+        </blockquote>
+      </section>
+
+      <section id="service-areas" className="bg-gray-50 p-6 rounded-2xl mb-10">
+        <h2 className="text-2xl font-bold mb-4">Service Area</h2>
+        <p className="mb-4">We proudly serve the greater New York City area including Queens, Brooklyn, the Bronx, and Nassau County.</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193571.43850841603!2d-74.1180864806497!3d40.70582545283596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xeca89e5f3b5b6a6f!2sNew%20York%20City%2C%20NY!5e0!3m2!1sen!2sus!4v1684957767526!5m2!1sen!2sus"
+          width="100%"
+          height="300"
+          style={{ border: 0 }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          className="rounded-2xl border">
+        </iframe>
+      </section>
+
+      <section id="contact" className="p-6 border rounded-2xl">
+        <h2 className="text-2xl font-bold mb-4">Get a Free Estimate</h2>
+        <form className="grid gap-4">
+          <input type="text" placeholder="Full Name" className="p-2 border rounded" />
+          <input type="email" placeholder="Email Address" className="p-2 border rounded" />
+          <input type="tel" placeholder="Phone Number" className="p-2 border rounded" />
+          <textarea placeholder="Service Needed" className="p-2 border rounded" rows="3" />
+          <button type="submit" className="bg-blue-600 text-white py-2 px-4 rounded-xl hover:bg-blue-700">
+            Submit Request
+          </button>
+        </form>
+        <p className="text-sm text-gray-500 mt-4">We typically respond within 24 hours and serve all of NYC and surrounding areas.</p>
+      </section>
+
+      <section id="contact-info" className="p-6 border rounded-2xl mt-10">
+        <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
+        <p className="mb-2 text-gray-700">Email: <a href="mailto:info@summitservices.com" className="text-blue-600 hover:underline">info@summitservices.com</a></p>
+        <p className="text-gray-700">Phone: <a href="tel:+11234567890" className="text-blue-600 hover:underline">(123) 456-7890</a></p>
+      </section>
+    </main>
+    </>
+  );
 }
