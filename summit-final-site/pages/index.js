@@ -4,6 +4,10 @@ import { useState } from 'react';
 
 export default function Home() {
   const [expanded, setExpanded] = useState(null);
+  const AnchorOffset = ({ id }) => (
+  <div id={id} className="relative -top-28 h-0" />
+);
+
   useEffect(() => {
     const menuButton = document.getElementById('menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
