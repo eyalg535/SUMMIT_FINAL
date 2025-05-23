@@ -108,7 +108,7 @@ export default function Home() {
                 alt="Chimney Services"
                 width={300}
                 height={200}
-                className="rounded-xl mb-2"
+                className="rounded-xl mb-2 object-cover w-[300px] h-[200px]"
               />
               <h3 className="text-xl font-semibold mb-2">Chimney Services & Repair</h3>
               <p>Certified chimney sweeping and expert repair services to keep your home safe, your chimney clear, and in top condition.</p>
