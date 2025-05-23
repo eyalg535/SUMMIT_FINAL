@@ -110,7 +110,7 @@ export default function Home() {
     className="w-full h-full object-cover"
   />
 </div>
-              <h3 className="text-xl font-semibold mb-2">Chimney Services & Repair</h3>
+              <h3 className="text-xl font-semibold mb-2">Chimney Services</h3>
               <p>Certified chimney sweeping and expert repair services to keep your home safe, your chimney clear, and in top condition.</p>
             </div>
           </div>
