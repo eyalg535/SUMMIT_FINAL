@@ -74,7 +74,7 @@ export default function Home() {
       </header>
 
       <main id="home" className="p-6 max-w-4xl mx-auto scroll-smooth">
-        <AnchorOffset id="services" />
+       
         <section id="services" className="mb-10">
           <h2 className="text-2xl font-bold mb-4">Our Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
