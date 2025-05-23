@@ -107,7 +107,7 @@ export default function Home() {
                 src="/chimney.jpeg"
                 alt="Chimney Services"
                 width={300}
-                height={400}
+                height={600}
                 className="rounded-xl mb-2"
               />
               <h3 className="text-xl font-semibold mb-2">Chimney Services & Repair</h3>
