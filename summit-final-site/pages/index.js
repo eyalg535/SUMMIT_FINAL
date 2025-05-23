@@ -105,7 +105,7 @@ export default function Home() {
             <div className="bg-white shadow-md rounded-2xl p-4">
               <div className="w-[300px] h-[200px] overflow-hidden rounded-xl mb-2">
   <img
-    src="/chimney.jpg"
+    src="/chimney.jpeg"
     alt="Chimney Services"
     className="w-full h-full object-cover"
   />
