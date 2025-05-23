@@ -82,7 +82,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white shadow-md rounded-2xl p-4">
               <img
-                src="/mock-duct.jpg"
+                src="/duct.png"
                 alt="Air Duct Cleaning"
                 width={300}
                 height={200}
@@ -93,7 +93,7 @@ export default function Home() {
             </div>
             <div className="bg-white shadow-md rounded-2xl p-4">
               <img
-                src="/mock-dryer.jpg"
+                src="/dryer.png"
                 alt="Dryer Vent Cleaning"
                 width={300}
                 height={200}
@@ -104,7 +104,7 @@ export default function Home() {
             </div>
             <div className="bg-white shadow-md rounded-2xl p-4">
               <img
-                src="/mock-chimney.jpg"
+                src="/chimney.jpeg"
                 alt="Chimney Services"
                 width={300}
                 height={200}
