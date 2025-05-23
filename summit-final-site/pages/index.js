@@ -73,7 +73,8 @@ export default function Home() {
         </div>
       </header>
 
-      <main id="home" className="p-6 max-w-4xl mx-auto scroll-smooth">
+    <div id="home" className="relative -top-28 h-0" />
+      <main className="p-6 max-w-4xl mx-auto scroll-smooth">
        
         <div id="services" className="relative -top-28 h-0" aria-hidden="true"></div>
 <section className="mb-10">
