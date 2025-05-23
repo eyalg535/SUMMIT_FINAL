@@ -122,7 +122,7 @@ export default function Home() {
           <p>Whether it's your first service or you're a returning customer, we treat your home like our own. Trust Summit Home Services to help you breathe easier and live safer.</p>
         </section>
                   
-      <section id="why-us" className=""bg-white p-6 shadow-lg rounded-2xl mb-10">
+      <section id="why-us" className="bg-white p-6 shadow-lg rounded-2xl mb-10">
         <h2 className="text-2xl font-bold mb-4">Why Choose Us?</h2>
         <div className="grid md:grid-cols-3 gap-4">
           <div className="flex items-start space-x-3">
