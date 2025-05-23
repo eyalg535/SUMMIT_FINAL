@@ -1,10 +1,6 @@
 import { useEffect } from 'react';
 import { useState } from 'react';
 
-const AnchorOffset = ({ id }) => (
-  <div id={id} className="relative -top-28 h-0" />
-);
-
 export default function Home() {
   const [expanded, setExpanded] = useState(null);
 
@@ -118,7 +114,7 @@ export default function Home() {
           </div>
         </section>
 
-        <AnchorOffset id="about" />
+        
         <section id="about" className="mb-10">
           <h2 className="text-2xl font-bold mb-4">About Us</h2>
           <p className="mb-2">Summit Home Services LLC is a family-owned and operated business dedicated to improving the comfort and safety of your home. With years of experience in air duct, dryer vent, and chimney cleaning, we use top-quality equipment and proven techniques to deliver outstanding results every time.</p>
