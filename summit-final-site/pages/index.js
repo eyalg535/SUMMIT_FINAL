@@ -113,6 +113,7 @@ export default function Home() {
         </div>
       </section>
 
+       <AnchorOffset id="about" />       
       <section id="about" className="bg-gray-100 p-6 rounded-2xl mb-10">
         <h2 className="text-2xl font-bold mb-4">About Us</h2>
         <p className="mb-4 text-gray-700">Summit Home Services LLC is a family-owned and operated business dedicated to improving the comfort and safety of your home. With years of experience in air duct, dryer vent, and chimney cleaning, we use top-quality equipment and proven techniques to deliver outstanding results every time.</p>
