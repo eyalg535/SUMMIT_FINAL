@@ -45,7 +45,7 @@ export default function Home() {
     <>
       <header className="bg-white shadow-md py-4 px-6 flex items-center justify-between sticky top-0 z-50">
         <div className="flex items-center space-x-4">
-          <img src="/logo.png" alt="Logo" className="w-16 h-16" />
+          <img src="/logo.png" alt="Logo" className="w-22 h-22" />
           <span className="font-bold text-lg text-gray-800">Summit Home Services</span>
         </div>
         <div className="md:hidden">
