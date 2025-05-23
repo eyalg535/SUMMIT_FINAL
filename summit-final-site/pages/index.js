@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-
 import { useState } from 'react';
 
 const AnchorOffset = ({ id }) => (
@@ -26,7 +25,7 @@ export default function Home() {
       let current = '';
       sections.forEach(section => {
         const sectionTop = section.offsetTop;
-        if (window.scrollY >= sectionTop - 100) {
+        if (window.scrollY >= sectionTop - 150) {
           current = section.getAttribute('id');
         }
       });
@@ -73,59 +72,60 @@ export default function Home() {
           <a href="#about" className="block hover:text-blue-600">About</a>
           <a href="#blog" className="block hover:text-blue-600">Blog</a>
           <a href="#service-areas" className="block hover:text-blue-600">Service Areas</a>
-          <a href="#contact" className="block hover:text-blue-600">Contact Us</a>
+          <a href="#contact-info" className="block hover:text-blue-600">Contact Us</a>
+          <a href="#contact" className="block hover:text-blue-600">Free Estimate</a>
         </div>
-        
       </header>
-  <main id="home" className="p-6 max-w-4xl mx-auto scroll-smooth">
-      
-      
-      
-      <AnchorOffset id="services" />
-      <section id="services" className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-        <div className="bg-white shadow-md rounded-2xl p-4">
-          <img
-            src="/mock-duct.jpg"
-            alt="Air Duct Cleaning"
-            width={300}
-            height={200}
-            className="rounded-xl mb-2"
-          />
-          <h2 className="text-xl font-semibold mb-2">Air Duct Cleaning</h2>
-          <p>Improve indoor air quality and HVAC efficiency with expert duct cleaning.</p>
-        </div>
-        <div className="bg-white shadow-md rounded-2xl p-4">
-          <img
-            src="/mock-dryer.jpg"
-            alt="Dryer Vent Cleaning"
-            width={300}
-            height={200}
-            className="rounded-xl mb-2"
-          />
-          <h2 className="text-xl font-semibold mb-2">Dryer Vent Cleaning</h2>
-          <p>Reduce fire risk and boost dryer performance with regular vent maintenance.</p>
-        </div>
-        <div className="bg-white shadow-md rounded-2xl p-4">
-          <img
-            src="/mock-chimney.jpg"
-            alt="Chimney Services"
-            width={300}
-            height={200}
-            className="rounded-xl mb-2"
-          />
-          <h2 className="text-xl font-semibold mb-2">Chimney Services & Repair</h2>
-          <p>Certified chimney sweeping and expert repair services to keep your home safe, your chimney clear, and in top condition.</p>
-        </div>
-      </section>
 
-       <AnchorOffset id="about" />       
-      <section id="about" className="bg-gray-100 p-6 rounded-2xl mb-10">
-        <h2 className="text-2xl font-bold mb-4">About Us</h2>
-        <p className="mb-4 text-gray-700">Summit Home Services LLC is a family-owned and operated business dedicated to improving the comfort and safety of your home. With years of experience in air duct, dryer vent, and chimney cleaning, we use top-quality equipment and proven techniques to deliver outstanding results every time.</p>
-        <p className="mb-4 text-gray-700">Our mission is to provide cleaner air, reduce fire hazards, and extend the life of your HVAC systems. We take pride in our integrity, customer service, and professionalism—values that guide every job we take on.</p>
-        <p className="text-gray-700">Whether it's your first service or you're a returning customer, we treat your home like our own. Trust Summit Home Services to help you breathe easier and live safer.</p>
-      </section>
+      <main id="home" className="p-6 max-w-4xl mx-auto scroll-smooth">
+        <AnchorOffset id="services" />
+        <section id="services" className="mb-10">
+          <h2 className="text-2xl font-bold mb-4">Our Services</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-white shadow-md rounded-2xl p-4">
+              <img
+                src="/mock-duct.jpg"
+                alt="Air Duct Cleaning"
+                width={300}
+                height={200}
+                className="rounded-xl mb-2"
+              />
+              <h3 className="text-xl font-semibold mb-2">Air Duct Cleaning</h3>
+              <p>Improve indoor air quality and HVAC efficiency with expert duct cleaning.</p>
+            </div>
+            <div className="bg-white shadow-md rounded-2xl p-4">
+              <img
+                src="/mock-dryer.jpg"
+                alt="Dryer Vent Cleaning"
+                width={300}
+                height={200}
+                className="rounded-xl mb-2"
+              />
+              <h3 className="text-xl font-semibold mb-2">Dryer Vent Cleaning</h3>
+              <p>Reduce fire risk and boost dryer performance with regular vent maintenance.</p>
+            </div>
+            <div className="bg-white shadow-md rounded-2xl p-4">
+              <img
+                src="/mock-chimney.jpg"
+                alt="Chimney Services"
+                width={300}
+                height={200}
+                className="rounded-xl mb-2"
+              />
+              <h3 className="text-xl font-semibold mb-2">Chimney Services & Repair</h3>
+              <p>Certified chimney sweeping and expert repair services to keep your home safe, your chimney clear, and in top condition.</p>
+            </div>
+          </div>
+        </section>
 
+        <AnchorOffset id="about" />
+        <section id="about" className="mb-10">
+          <h2 className="text-2xl font-bold mb-4">About Us</h2>
+          <p className="mb-2">Summit Home Services LLC is a family-owned and operated business dedicated to improving the comfort and safety of your home. With years of experience in air duct, dryer vent, and chimney cleaning, we use top-quality equipment and proven techniques to deliver outstanding results every time.</p>
+          <p className="mb-2">Our mission is to provide cleaner air, reduce fire hazards, and extend the life of your HVAC systems. We take pride in our integrity, customer service, and professionalism—values that guide every job we take on.</p>
+          <p>Whether it's your first service or you're a returning customer, we treat your home like our own. Trust Summit Home Services to help you breathe easier and live safer.</p>
+        </section>
+                  
       <section id="why-us" className="bg-gray-100 p-6 rounded-2xl mb-10">
         <h2 className="text-2xl font-bold mb-4">Why Choose Us?</h2>
         <div className="grid md:grid-cols-3 gap-4">
