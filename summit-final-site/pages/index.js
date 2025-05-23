@@ -115,14 +115,14 @@ export default function Home() {
         </section>
 
         
-        <section id="about" className="mb-10">
+        <section id="about" className="bg-white p-6 shadow-lg rounded-2xl mb-10">
           <h2 className="text-2xl font-bold mb-4">About Us</h2>
           <p className="mb-2">Summit Home Services LLC is a family-owned and operated business dedicated to improving the comfort and safety of your home. With years of experience in air duct, dryer vent, and chimney cleaning, we use top-quality equipment and proven techniques to deliver outstanding results every time.</p>
           <p className="mb-2">Our mission is to provide cleaner air, reduce fire hazards, and extend the life of your HVAC systems. We take pride in our integrity, customer service, and professionalism—values that guide every job we take on.</p>
           <p>Whether it's your first service or you're a returning customer, we treat your home like our own. Trust Summit Home Services to help you breathe easier and live safer.</p>
         </section>
                   
-      <section id="why-us" className="bg-gray-100 p-6 rounded-2xl mb-10">
+      <section id="why-us" className=""bg-white p-6 shadow-lg rounded-2xl mb-10">
         <h2 className="text-2xl font-bold mb-4">Why Choose Us?</h2>
         <div className="grid md:grid-cols-3 gap-4">
           <div className="flex items-start space-x-3">
@@ -176,7 +176,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="testimonials" className="bg-gray-50 p-6 rounded-2xl mb-10">
+      <section id="testimonials" className="bg-white p-6 shadow-lg rounded-2xl mb-10">
         <h2 className="text-2xl font-bold mb-4">What Our Clients Say</h2>
         <blockquote className="text-gray-700 italic border-l-4 border-blue-600 pl-4 mb-4">
           “Summit Home Services cleaned our ducts thoroughly and professionally. We noticed the air was fresher immediately!” — Sarah M.
@@ -186,7 +186,7 @@ export default function Home() {
         </blockquote>
       </section>
 
-      <section id="service-areas" className="bg-gray-50 p-6 rounded-2xl mb-10">
+      <section id="service-areas" className="bg-white p-6 shadow-lg rounded-2xl mb-10">
         <h2 className="text-2xl font-bold mb-4">Service Area</h2>
         <p className="mb-4">We proudly serve the greater New York City area including Queens, Brooklyn, the Bronx, and Nassau County.</p>
         <iframe
