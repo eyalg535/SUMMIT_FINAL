@@ -103,7 +103,7 @@ export default function Home() {
               <p>Reduce fire risk and boost dryer performance with regular vent maintenance.</p>
             </div>
             <div className="bg-white shadow-md rounded-2xl p-4">
-              <div className="w-[220px] h-[320px] overflow-hidden rounded-xl mb-2">
+              <div className="w-[230px] h-[315px] overflow-hidden rounded-xl mb-2">
   <img
     src="/chimney.jpeg"
     alt="Chimney Services"
