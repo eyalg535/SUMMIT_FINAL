@@ -76,7 +76,7 @@ export default function Home() {
       
       
       
-
+      <AnchorOffset id="services" />
       <section id="services" className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
         <div className="bg-white shadow-md rounded-2xl p-4">
           <img
