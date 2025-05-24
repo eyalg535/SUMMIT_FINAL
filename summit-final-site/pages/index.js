@@ -176,7 +176,15 @@ const scrollToWithOffset = (id) => {
             <h3 className="text-xl font-semibold text-blue-700">How Often Should You Clean Your Dryer Vent?</h3>
             <p className="text-gray-700 text-sm mt-2">
               Prevent fire hazards and keep your dryer efficient with these expert tips.
-              <button onClick={() => (() => { setExpanded(expanded === 'blog2' ? null : 'blog2'); document.getElementById('blog2')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); })()} className="ml-2 text-blue-500 hover:underline">{expanded === 'blog2' ? 'Read less' : 'Read more'}</button>
+              <button
+  onClick={() => {
+    setExpanded(expanded === 'blog2' ? null : 'blog2');
+    scrollToWithOffset('blog2');
+  }}
+  className="ml-2 text-blue-500 hover:underline"
+>
+  {expanded === 'blog2' ? 'Read less' : 'Read more'}
+</button>
             </p>
             {(expanded === 'blog2') && (
               <p className="text-sm text-gray-600 mt-2 transition-all duration-300 ease-in-out">Dryer vents should be cleaned at least once a year to prevent dangerous lint buildup that can lead to house fires. Regular cleaning increases efficiency, reduces drying time, and lowers energy bills. Homes with pets, large families, or frequent laundry cycles may benefit from cleaning every six months.</p>
@@ -186,7 +194,15 @@ const scrollToWithOffset = (id) => {
             <h3 className="text-xl font-semibold text-blue-700">Signs Your Chimney Needs Repair</h3>
             <p className="text-gray-700 text-sm mt-2">
               Learn how to spot common chimney issues before they become costly problems.
-              <button onClick={() => (() => { setExpanded(expanded === 'blog3' ? null : 'blog3'); document.getElementById('blog3')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); })()} className="ml-2 text-blue-500 hover:underline">{expanded === 'blog3' ? 'Read less' : 'Read more'}</button>
+              <button
+  onClick={() => {
+    setExpanded(expanded === 'blog3' ? null : 'blog3');
+    scrollToWithOffset('blog3');
+  }}
+  className="ml-2 text-blue-500 hover:underline"
+>
+  {expanded === 'blog3' ? 'Read less' : 'Read more'}
+</button>
             </p>
             {(expanded === 'blog3') && (
               <p className="text-sm text-gray-600 mt-2 transition-all duration-300 ease-in-out">Look for signs such as crumbling mortar, water stains on interior walls, smoky odors, smoke backdrafts, or visible cracks in the chimney. Regular inspections by certified professionals help identify structural issues, moisture problems, and blockage hazards that could lead to carbon monoxide risks or fire hazards.</p>
