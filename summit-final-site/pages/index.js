@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
-const [showBanner, setShowBanner] = useState(true);
-
 export default function Home() {
   const [expanded, setExpanded] = useState(null);
-
+const [showBanner, setShowBanner] = useState(true);
+  
   useEffect(() => {
     const menuButton = document.getElementById('menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
