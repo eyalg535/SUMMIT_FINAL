@@ -1,6 +1,8 @@
 import { useEffect } from 'react';
 import { useState } from 'react';
 
+const [showBanner, setShowBanner] = useState(true);
+
 export default function Home() {
   const [expanded, setExpanded] = useState(null);
 
@@ -50,6 +52,31 @@ const scrollToWithOffset = (id) => {
   
   return (
     <>
+    {showBanner && (
+  <div className="bg-gradient-to-r from-blue-700 to-blue-500 text-white p-4 flex flex-col md:flex-row justify-between items-center px-6 relative z-50">
+    <div className="mb-2 md:mb-0">
+      <h2 className="text-lg font-semibold">Save Up To 30% With Our Regular Maintenance!</h2>
+      <p className="text-sm">
+        Join our regular maintenance plan and save up to 30% on every air duct, dryer vent, or mini-split service.
+      </p>
+    </div>
+    <div className="flex items-center gap-4">
+      <button
+        className="bg-yellow-300 text-black font-semibold px-4 py-2 rounded-full hover:bg-yellow-400"
+        onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+      >
+        Yes, I Want!
+      </button>
+      <button
+        onClick={() => setShowBanner(false)}
+        className="text-white text-2xl leading-none"
+      >
+        &times;
+      </button>
+    </div>
+  </div>
+)}
+
       <header className="bg-white shadow-md h-20 px-6 flex items-center justify-between sticky top-0 z-50">
         <div className="flex items-center space-x-4">
           <img src="/logo.png" alt="Logo" className="h-12 w-auto" />
