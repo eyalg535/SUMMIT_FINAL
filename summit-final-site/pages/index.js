@@ -57,6 +57,7 @@ const scrollToWithOffset = (id) => {
   
   return (
     <>
+    {/* 
     {showBanner && (
   <div className="bg-gradient-to-r from-blue-700 to-blue-500 text-white p-4 flex flex-col md:flex-row justify-between items-center px-6 relative z-50">
     <div className="mb-2 md:mb-0">
@@ -81,7 +82,7 @@ const scrollToWithOffset = (id) => {
     </div>
   </div>
 )}
-
+*/}
       <header className="bg-white shadow-md h-20 px-6 flex items-center justify-between sticky top-0 z-50">
         <div className="flex items-center space-x-4">
           <img src="/logo.png" alt="Logo" className="h-12 w-auto" />
