@@ -293,7 +293,7 @@ const scrollToWithOffset = (id) => {
     e.preventDefault();
     const form = e.target;
 
-    fetch("https://formsubmit.co/summitservicesnyc@gmail.com", {
+    fetch("https://formsubmit.co/e938d06acd5e30473274c352a30c646a", {
       method: "POST",
       body: new FormData(form),
     })
