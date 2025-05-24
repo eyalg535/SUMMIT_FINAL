@@ -83,9 +83,9 @@ const scrollToWithOffset = (id) => {
   </div>
 )}
 */}
-      <header className="bg-white shadow-md h-20 px-6 flex items-center justify-between sticky top-0 z-50">
+      <header className="bg-white shadow-md h-20 overflow-hidden px-6 flex items-center justify-between sticky top-0 z-50">
         <div className="flex items-center space-x-4">
-          <img src="/logo.png" alt="Logo" className="h-16 max-h-full object-contain" />
+          <img src="/logo.png" alt="Logo" className="h-16 w-auto max-h-full" />
           <span className="font-bold text-lg text-gray-800">Summit Home Services</span>
         </div>
         <div className="md:hidden">
