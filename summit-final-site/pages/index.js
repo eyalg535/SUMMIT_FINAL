@@ -224,7 +224,8 @@ const scrollToWithOffset = (id) => {
             <div id="service-areas" className="relative -top-28 h-0" aria-hidden="true"></div>
       <section id="service-areas" className="bg-white p-6 shadow-lg rounded-2xl mb-10">
         <h2 className="text-2xl font-bold mb-4">Service Area</h2>
-        <p className="mb-4">We proudly serve the greater New York City area including Queens, Brooklyn, the Bronx, and Nassau County.</p>
+        <p className="mb-4">We proudly serve the greater New York City area including Queens, Brooklyn, the Bronx, and Nassau County.
+    We also provide service to Bergen County, NJ, and White Plains, NY.</p>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193571.43850841603!2d-74.1180864806497!3d40.70582545283596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xeca89e5f3b5b6a6f!2sNew%20York%20City%2C%20NY!5e0!3m2!1sen!2sus!4v1684957767526!5m2!1sen!2sus"
           width="100%"
