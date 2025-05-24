@@ -83,7 +83,8 @@ const scrollToWithOffset = (id) => {
   </div>
 )}
 */}
-      <header className="bg-white/80 backdrop-blur-md shadow-md ...">
+      <header className="bg-gradient-to-r from-blue-800 to-blue-600 text-white shadow-lg h-20 px-6 flex items-center justify-between sticky top-0 z-50">
+
 
         <div className="flex items-center space-x-4">
           <img src="/logo.png" alt="Logo" className="h-16 w-auto max-h-full" />
@@ -94,7 +95,8 @@ const scrollToWithOffset = (id) => {
             ☰
           </button>
         </div>
-        <nav id="navbar" className="hidden md:flex space-x-6 text-gray-700 font-medium">
+        <nav id="navbar" className="hidden md:flex space-x-6 font-medium text-white">
+
           <a href="#home" className="hover:text-blue-600">Home</a>
           <a href="#services" className="hover:text-blue-600">Services</a>
           <a href="#about" className="hover:text-blue-600">About</a>
@@ -103,7 +105,8 @@ const scrollToWithOffset = (id) => {
           <a href="#contact-info" className="hover:text-blue-600">Contact Us</a>
           <a href="#contact" className="hover:text-blue-600">Free Estimate</a>
         </nav>
-        <div id="mobile-menu" className="md:hidden hidden flex-col absolute top-16 left-0 w-full bg-white shadow-md px-6 py-4 space-y-2">
+        <div id="mobile-menu" className="md:hidden hidden flex-col absolute top-16 left-0 w-full bg-blue-700 shadow-md px-6 py-4 space-y-2 text-white">
+
           <a href="#home" className="block hover:text-blue-600">Home</a>
           <a href="#services" className="block hover:text-blue-600">Services</a>
           <a href="#about" className="block hover:text-blue-600">About</a>
