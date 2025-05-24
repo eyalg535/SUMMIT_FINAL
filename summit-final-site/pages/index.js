@@ -227,7 +227,7 @@ const scrollToWithOffset = (id) => {
         <p className="mb-4">We proudly serve the greater New York City area including Queens, Brooklyn, the Bronx, and Nassau County.
     We also provide service to Bergen County, NJ, and White Plains, NY.</p>
         <iframe
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2999.0642453066617!2d-74.0112222!3d40.9080642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f5cbcbf84d87%3A0x8d94f55f6d632a0f!2sBergen%20County%2C%20NJ!5e0!3m2!1sen!2sus!4v1716493997014!5m2!1sen!2sus"
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193571.43850841603!2d-74.1180864806497!3d40.70582545283596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xeca89e5f3b5b6a6f!2sNew%20York%20City%2C%20NY!5e0!3m2!1sen!2sus!4v1684957767526!5m2!1sen!2sus"
   width="100%"
   height="300"
   style={{ border: 0 }}
@@ -236,6 +236,7 @@ const scrollToWithOffset = (id) => {
   referrerPolicy="no-referrer-when-downgrade"
   className="rounded-2xl border"
 />
+
 
       </section>
 
