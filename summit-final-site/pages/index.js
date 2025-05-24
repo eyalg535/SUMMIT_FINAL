@@ -41,6 +41,13 @@ export default function Home() {
     };
   }, []);
 
+const scrollToWithOffset = (id) => {
+  const el = document.getElementById(id);
+  const yOffset = -100; // adjust this if your header is taller
+  const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+  window.scrollTo({ top: y, behavior: 'smooth' });
+};
+  
   return (
     <>
       <header className="bg-white shadow-md h-20 px-6 flex items-center justify-between sticky top-0 z-50">
@@ -151,7 +158,15 @@ export default function Home() {
             <h3 className="text-xl font-semibold text-blue-700">Top 5 Benefits of Air Duct Cleaning</h3>
             <p className="text-gray-700 text-sm mt-2">
               Learn why regular duct cleaning improves air quality, lowers energy bills, and extends HVAC life.
-              <button onClick={() => (() => { setExpanded(expanded === 'blog1' ? null : 'blog1'); document.getElementById('blog1')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); })()} className="ml-2 text-blue-500 hover:underline">{expanded === 'blog1' ? 'Read less' : 'Read more'}</button>
+              <button
+  onClick={() => {
+    setExpanded(expanded === 'blog1' ? null : 'blog1');
+    scrollToWithOffset('blog1');
+  }}
+  className="ml-2 text-blue-500 hover:underline"
+>
+  {expanded === 'blog1' ? 'Read less' : 'Read more'}
+</button>
             </p>
             {(expanded === 'blog1') && (
               <p className="text-sm text-gray-600 mt-2 transition-all duration-300 ease-in-out">Regular air duct cleaning helps improve indoor air quality by reducing dust, pollen, and other allergens circulating through your home. It enhances HVAC efficiency, lowers energy costs, removes unpleasant odors, and extends the system's life span. Clean ducts also promote healthier breathing environments for allergy sufferers and children.</p>
