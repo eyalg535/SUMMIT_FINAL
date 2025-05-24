@@ -4,6 +4,17 @@ export default function Home() {
   const [expanded, setExpanded] = useState(null);
   const [showBanner, setShowBanner] = useState(true);
   const [submitted, setSubmitted] = useState(false);
+
+  useEffect(() => {
+  if (submitted) {
+    const timer = setTimeout(() => {
+      setSubmitted(false);
+    }, 10000); // 10 seconds
+
+    return () => clearTimeout(timer); // cleanup
+  }
+}, [submitted]);
+
   
 useEffect(() => {
   const menuButton = document.getElementById('menu-button');
