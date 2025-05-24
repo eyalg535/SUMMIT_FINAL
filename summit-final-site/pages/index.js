@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 
 export default function Home() {
   const [expanded, setExpanded] = useState(null);
-const [showBanner, setShowBanner] = useState(true);
+  const [showBanner, setShowBanner] = useState(true);
+  const [submitted, setSubmitted] = useState(false);
   
   useEffect(() => {
     const menuButton = document.getElementById('menu-button');
@@ -269,15 +270,38 @@ const scrollToWithOffset = (id) => {
             <div id="contact" className="relative -top-28 h-0" aria-hidden="true"></div>
       <section id="contact" className="p-6 border rounded-2xl">
         <h2 className="text-2xl font-bold mb-4">Get a Free Estimate</h2>
-        <form className="grid gap-4">
-          <input type="text" placeholder="Full Name" className="p-2 border rounded" />
-          <input type="email" placeholder="Email Address" className="p-2 border rounded" />
-          <input type="tel" placeholder="Phone Number" className="p-2 border rounded" />
-          <textarea placeholder="Service Needed" className="p-2 border rounded" rows="3" />
-          <button type="submit" className="bg-blue-600 text-white py-2 px-4 rounded-xl hover:bg-blue-700">
-            Submit Request
-          </button>
-        </form>
+        <form
+  onSubmit={(e) => {
+    e.preventDefault();
+    const form = e.target;
+
+    fetch("https://formsubmit.co/summitservicesnyc@gmail.com", {
+      method: "POST",
+      body: new FormData(form),
+    })
+    .then(() => {
+      setSubmitted(true);
+      form.reset();
+    })
+    .catch((error) => console.error("Form submission error:", error));
+  }}
+  className="grid gap-4"
+>
+  <input type="hidden" name="_captcha" value="false" />
+  <input type="text" name="Full Name" placeholder="Full Name" className="p-2 border rounded" required />
+  <input type="email" name="Email Address" placeholder="Email Address" className="p-2 border rounded" required />
+  <input type="tel" name="Phone Number" placeholder="Phone Number" className="p-2 border rounded" />
+  <textarea name="Service Needed" placeholder="Service Needed" className="p-2 border rounded" rows="3" />
+  <button type="submit" className="bg-blue-600 text-white py-2 px-4 rounded-xl hover:bg-blue-700">
+    Submit Request
+  </button>
+</form>
+    {submitted && (
+  <div className="mt-4 p-4 bg-green-100 border border-green-400 text-green-700 rounded">
+    ✅ Thank you! Your request has been submitted.
+  </div>
+)}
+
         <p className="text-sm text-gray-500 mt-4">We typically respond within 24 hours and serve all of NYC and surrounding areas.</p>
       </section>
 
