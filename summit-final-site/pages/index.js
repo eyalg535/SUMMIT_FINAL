@@ -177,9 +177,7 @@ const scrollToWithOffset = (id) => {
   <h3 className="text-xl font-semibold mb-2">Roofing Repair & Maintenance</h3>
   <p>Reliable roofing services for leaks, shingle replacement, and full maintenance.</p>
 </div>
-
-
-        </section>
+</section>
 
         <div id="about" className="relative -top-28 h-0" aria-hidden="true"></div>
         <section id="about" className="bg-white p-6 shadow-lg rounded-2xl mb-10">
