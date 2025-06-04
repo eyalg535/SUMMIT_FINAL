@@ -155,24 +155,18 @@ const scrollToWithOffset = (id) => {
   {/* Row 2 */}
   <div className="w-[235px] h-[315px] overflow-hidden rounded-xl mb-2 mx-auto">
   <img src="/appliance.jpeg" alt="Appliance Repair" className="w-full h-full object-cover" />
-    </div>
-    <div>
     <h3 className="text-xl font-semibold mb-2">Appliance Repair</h3>
     <p>Fast and affordable repair services for washers, dryers, ovens, and more.</p>
   </div>
 
  <div className="w-[235px] h-[315px] overflow-hidden rounded-xl mb-2 mx-auto">
   <img src="/lock.png" alt="Locksmith Services" className="w-full h-full object-cover" />
-    </div>
-    <div>
     <h3 className="text-xl font-semibold mb-2">Locksmith Services</h3>
     <p>Emergency lockout assistance, lock changes, and security upgrades for your home.</p>
   </div>
 
   <div className="w-[235px] h-[315px] overflow-hidden rounded-xl mb-2 mx-auto">
   <img src="/roof.jpeg" alt="Roofing Repair & Maintenance" className="w-full h-full object-cover" />
-    </div>
-    <div>
     <h3 className="text-xl font-semibold mb-2">Roofing Repair & Maintenance</h3>
     <p>Reliable roofing services for leaks, shingle replacement, and full maintenance.</p>
   </div>
