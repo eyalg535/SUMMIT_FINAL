@@ -171,7 +171,7 @@ const scrollToWithOffset = (id) => {
   <p>Reliable roofing services for leaks, shingle replacement, and full maintenance.</p>
 </div>
 <div className="bg-white shadow-md rounded-2xl p-4">
-  <img src="/mock-appliance.jpg" alt="Appliance Repair" width={300} height={200} className="rounded-xl mb-2" />
+  <img src="appliance.jpeg" alt="Appliance Repair" width={300} height={200} className="rounded-xl mb-2" />
   <h3 className="text-xl font-semibold mb-2">Appliance Repair</h3>
   <p>Fast and affordable repair services for washers, dryers, ovens, and more.</p>
 </div>
