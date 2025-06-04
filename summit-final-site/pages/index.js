@@ -130,56 +130,48 @@ const scrollToWithOffset = (id) => {
         <div id="services" className="relative -top-28 h-0" aria-hidden="true"></div>
 <section className="mb-10">
           <h2 className="text-2xl font-bold mb-4">Our Services</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-white shadow-md rounded-2xl p-4">
-              <img
-                src="/duct.png"
-                alt="Air Duct Cleaning"
-                width={300}
-                height={200}
-                className="rounded-xl mb-2"
-              />
-              <h3 className="text-xl font-semibold mb-2">Air Duct Cleaning</h3>
-              <p>Improve indoor air quality and HVAC efficiency with expert duct cleaning.</p>
-            </div>
-            <div className="bg-white shadow-md rounded-2xl p-4">
-              <img
-                src="/dryer.png"
-                alt="Dryer Vent Cleaning"
-                width={300}
-                height={200}
-                className="rounded-xl mb-2"
-              />
-              <h3 className="text-xl font-semibold mb-2">Dryer Vent Cleaning</h3>
-              <p>Reduce fire risk and boost dryer performance with regular vent maintenance.</p>
-            </div>
-            <div className="bg-white shadow-md rounded-2xl p-4">
-              <div className="w-[235px] h-[315px] overflow-hidden rounded-xl mb-2">
-  <img
-    src="/chimney.jpeg"
-    alt="Chimney Services"
-    className="w-full h-full object-cover"
-  />
+         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+  {/* Row 1 */}
+  <div className="bg-white shadow-md rounded-2xl p-4">
+    <img src="/duct.png" alt="Air Duct Cleaning" width={300} height={200} className="rounded-xl mb-2" />
+    <h3 className="text-xl font-semibold mb-2">Air Duct Cleaning</h3>
+    <p>Improve indoor air quality and HVAC efficiency with expert duct cleaning.</p>
+  </div>
+
+  <div className="bg-white shadow-md rounded-2xl p-4">
+    <img src="/dryer.png" alt="Dryer Vent Cleaning" width={300} height={200} className="rounded-xl mb-2" />
+    <h3 className="text-xl font-semibold mb-2">Dryer Vent Cleaning</h3>
+    <p>Reduce fire risk and boost dryer performance with regular vent maintenance.</p>
+  </div>
+
+  <div className="bg-white shadow-md rounded-2xl p-4">
+    <div className="w-[235px] h-[315px] overflow-hidden rounded-xl mb-2">
+      <img src="/chimney.jpeg" alt="Chimney Services" className="w-full h-full object-cover" />
+    </div>
+    <h3 className="text-xl font-semibold mb-2">Chimney Services</h3>
+    <p>Certified chimney sweeping and expert repair services to keep your home safe, your chimney clear, and in top condition.</p>
+  </div>
+
+  {/* Row 2 */}
+  <div className="bg-white shadow-md rounded-2xl p-4">
+    <img src="/appliance.jpeg" alt="Appliance Repair" width={300} height={200} className="rounded-xl mb-2" />
+    <h3 className="text-xl font-semibold mb-2">Appliance Repair</h3>
+    <p>Fast and affordable repair services for washers, dryers, ovens, and more.</p>
+  </div>
+
+  <div className="bg-white shadow-md rounded-2xl p-4">
+    <img src="/lock.png" alt="Locksmith Services" width={300} height={200} className="rounded-xl mb-2" />
+    <h3 className="text-xl font-semibold mb-2">Locksmith Services</h3>
+    <p>Emergency lockout assistance, lock changes, and security upgrades for your home.</p>
+  </div>
+
+  <div className="bg-white shadow-md rounded-2xl p-4">
+    <img src="/roof.jpeg" alt="Roofing Repair & Maintenance" width={300} height={200} className="rounded-xl mb-2" />
+    <h3 className="text-xl font-semibold mb-2">Roofing Repair & Maintenance</h3>
+    <p>Reliable roofing services for leaks, shingle replacement, and full maintenance.</p>
+  </div>
 </div>
-              <h3 className="text-xl font-semibold mb-2">Chimney Services</h3>
-              <p>Certified chimney sweeping and expert repair services to keep your home safe, your chimney clear, and in top condition.</p>
-            </div>
-          </div>
-      <div className="bg-white shadow-md rounded-2xl p-4">
-  <img src="/roof.jpeg" alt="Roofing Repair & Maintenance" width={300} height={200} className="rounded-xl mb-2" />
-  <h3 className="text-xl font-semibold mb-2">Roofing Repair & Maintenance</h3>
-  <p>Reliable roofing services for leaks, shingle replacement, and full maintenance.</p>
-</div>
-<div className="bg-white shadow-md rounded-2xl p-4">
-  <img src="/appliance.jpeg" alt="Appliance Repair" width={300} height={200} className="rounded-xl mb-2" />
-  <h3 className="text-xl font-semibold mb-2">Appliance Repair</h3>
-  <p>Fast and affordable repair services for washers, dryers, ovens, and more.</p>
-</div>
-<div className="bg-white shadow-md rounded-2xl p-4">
-  <img src="/lock.png" alt="Locksmith Services" width={300} height={200} className="rounded-xl mb-2" />
-  <h3 className="text-xl font-semibold mb-2">Locksmith Services</h3>
-  <p>Emergency lockout assistance, lock changes, and security upgrades for your home.</p>
-</div>
+
 
         </section>
 
