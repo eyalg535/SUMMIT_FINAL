@@ -158,7 +158,7 @@ const scrollToWithOffset = (id) => {
     <img src="/appliance.jpeg" alt="Appliance Repair" className="w-full h-full object-cover" />
   </div>
   <h3 className="text-xl font-semibold mb-2">Appliance Repair</h3>
-  <p>Fast and affordable repair services for washers, dryers, ovens, and more.</p>
+  <p>Fast and affordable repair services for washers, dryers, ovens, refrigerators, and more.</p>
 </div>
 
 
