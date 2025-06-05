@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import ServiceGallery from '/Users/eyalgerby/Desktop/Summit/Web/SUMMIT_FINAL/summit-final-site/ServiceGallery.jsx';
+import ServiceGallery from '../ServiceGallery';
 
 
 export default function Home() {
