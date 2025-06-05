@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import ServiceGallery from './ServiceGallery';
+
 
 export default function Home() {
   const [expanded, setExpanded] = useState(null);
@@ -339,19 +341,34 @@ const scrollToWithOffset = (id) => {
 </article>
         </div>
       </section>
-  <div id="gallery" className="relative -top-28 h-0" aria-hidden="true"></div>
-<section id="gallery" className="bg-white p-6 shadow-lg rounded-2xl mb-10">
-  <h2 className="text-2xl font-bold mb-4">Project Gallery</h2>
-  <p className="mb-6 text-gray-600">Check out photos from our recent appliance repairs, air duct cleanings, roof repairs, and more.</p>
-  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-    <img src="/gallery/photo1.jpg" alt="Job 1" className="rounded-xl object-cover w-full h-64" />
-    <img src="/gallery/photo2.jpg" alt="Job 2" className="rounded-xl object-cover w-full h-64" />
-    <img src="/gallery/photo3.jpg" alt="Job 3" className="rounded-xl object-cover w-full h-64" />
-    <img src="/gallery/photo4.jpg" alt="Job 4" className="rounded-xl object-cover w-full h-64" />
-    <img src="/gallery/photo5.jpg" alt="Job 5" className="rounded-xl object-cover w-full h-64" />
-    <img src="/gallery/photo6.jpg" alt="Job 6" className="rounded-xl object-cover w-full h-64" />
-  </div>
+  <section id="gallery" className="bg-white p-6 shadow-lg rounded-2xl mb-10">
+  <h2 className="text-2xl font-bold mb-4">Gallery by Service</h2>
+
+  <ServiceGallery 
+    title="Appliance Repair"
+    images={[
+      "/gallery/appliance/img1.jpg",
+      "/gallery/appliance/img2.jpg"
+    ]}
+  />
+
+  <ServiceGallery 
+    title="Roofing"
+    images={[
+      "/gallery/roofing/img1.jpg",
+      "/gallery/roofing/img2.jpg"
+    ]}
+  />
+
+  <ServiceGallery 
+    title="Chimney Services"
+    images={[
+      "/gallery/chimney/img1.jpg",
+      "/gallery/chimney/img2.jpg"
+    ]}
+  />
 </section>
+
 
 
       <section id="testimonials" className="bg-white p-6 shadow-lg rounded-2xl mb-10">
