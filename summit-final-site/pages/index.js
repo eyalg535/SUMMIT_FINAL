@@ -274,6 +274,68 @@ const scrollToWithOffset = (id) => {
               <p className="text-sm text-gray-600 mt-2 transition-all duration-300 ease-in-out">Look for signs such as crumbling mortar, water stains on interior walls, smoky odors, smoke backdrafts, or visible cracks in the chimney. Regular inspections by certified professionals help identify structural issues, moisture problems, and blockage hazards that could lead to carbon monoxide risks or fire hazards.</p>
             )}
           </article>
+            <article id="blog4">
+  <h3 className="text-xl font-semibold text-blue-700">Appliance Repair Tips Every Homeowner Should Know</h3>
+  <p className="text-gray-700 text-sm mt-2">
+    Learn how to spot early signs of appliance failure and when to call a pro.
+    <button
+      onClick={() => {
+        setExpanded(expanded === 'blog4' ? null : 'blog4');
+        scrollToWithOffset('blog4');
+      }}
+      className="ml-2 text-blue-500 hover:underline"
+    >
+      {expanded === 'blog4' ? 'Read less' : 'Read more'}
+    </button>
+  </p>
+  {expanded === 'blog4' && (
+    <p className="text-sm text-gray-600 mt-2 transition-all duration-300 ease-in-out">
+      Common signs your appliance needs repair include strange noises, burning smells, excessive vibration, or failure to start. Addressing issues early can prevent costly replacements. Our certified technicians provide fast diagnostics and dependable repairs.
+    </p>
+  )}
+</article>
+
+<article id="blog5">
+  <h3 className="text-xl font-semibold text-blue-700">When to Call a Locksmith (and When Not To)</h3>
+  <p className="text-gray-700 text-sm mt-2">
+    Avoid costly mistakes and know when professional lock service is necessary.
+    <button
+      onClick={() => {
+        setExpanded(expanded === 'blog5' ? null : 'blog5');
+        scrollToWithOffset('blog5');
+      }}
+      className="ml-2 text-blue-500 hover:underline"
+    >
+      {expanded === 'blog5' ? 'Read less' : 'Read more'}
+    </button>
+  </p>
+  {expanded === 'blog5' && (
+    <p className="text-sm text-gray-600 mt-2 transition-all duration-300 ease-in-out">
+      Call a locksmith for broken key extractions, lockouts, or security upgrades. Avoid unnecessary service fees by identifying when basic troubleshooting—like replacing batteries in smart locks—can be done yourself.
+    </p>
+  )}
+</article>
+
+<article id="blog6">
+  <h3 className="text-xl font-semibold text-blue-700">3 Signs Your Roof Needs Immediate Attention</h3>
+  <p className="text-gray-700 text-sm mt-2">
+    Don’t wait—these warning signs could mean roof damage is costing you money.
+    <button
+      onClick={() => {
+        setExpanded(expanded === 'blog6' ? null : 'blog6');
+        scrollToWithOffset('blog6');
+      }}
+      className="ml-2 text-blue-500 hover:underline"
+    >
+      {expanded === 'blog6' ? 'Read less' : 'Read more'}
+    </button>
+  </p>
+  {expanded === 'blog6' && (
+    <p className="text-sm text-gray-600 mt-2 transition-all duration-300 ease-in-out">
+      Look for missing shingles, water stains on ceilings, or sagging roof lines. Timely roof repairs help you avoid major water damage and extend the life of your home’s most important protection.
+    </p>
+  )}
+</article>
         </div>
       </section>
 
