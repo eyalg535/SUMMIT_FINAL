@@ -393,6 +393,13 @@ const scrollToWithOffset = (id) => {
   <input type="text" name="Full Name" placeholder="Full Name" className="p-2 border rounded" required />
   <input type="email" name="Email Address" placeholder="Email Address" className="p-2 border rounded" required />
   <input type="tel" name="Phone Number" placeholder="Phone Number" className="p-2 border rounded" />
+    <input
+      type="text"
+      name="Service Address"
+      placeholder="Address (Street, City, ZIP)"
+      className="p-2 border rounded"
+      required
+    />
   <textarea name="Service Needed" placeholder="Service Needed" className="p-2 border rounded" rows="3" />
   <button type="submit" className="bg-blue-600 text-white py-2 px-4 rounded-xl hover:bg-blue-700">
     Submit Request
