@@ -373,33 +373,15 @@ const scrollToWithOffset = (id) => {
       <section id="contact" className="p-6 border rounded-2xl">
         <h2 className="text-2xl font-bold mb-4">Get a Free Estimate</h2>
         <form
-  onSubmit={(e) => {
-    e.preventDefault();
-    const form = e.target;
-
-    fetch("https://formsubmit.co/e938d06acd5e30473274c352a30c646a", {
-      method: "POST",
-      body: new FormData(form),
-    })
-    .then(() => {
-      setSubmitted(true);
-      form.reset();
-    })
-    .catch((error) => console.error("Form submission error:", error));
-  }}
+  action="https://formsubmit.co/e938d06acd5e30473274c352a30c646a"
+  method="POST"
   className="grid gap-4"
 >
   <input type="hidden" name="_captcha" value="false" />
   <input type="text" name="Full Name" placeholder="Full Name" className="p-2 border rounded" required />
   <input type="email" name="Email Address" placeholder="Email Address" className="p-2 border rounded" required />
   <input type="tel" name="Phone Number" placeholder="Phone Number" className="p-2 border rounded" />
-    <input
-      type="text"
-      name="Service Address"
-      placeholder="Address (Street, City, ZIP)"
-      className="p-2 border rounded"
-      required
-    />
+  <input type="text" name="Service Address" placeholder="Address (Street, City, ZIP)" className="p-2 border rounded" required />
   <textarea name="Service Needed" placeholder="Service Needed" className="p-2 border rounded" rows="3" />
   <button type="submit" className="bg-blue-600 text-white py-2 px-4 rounded-xl hover:bg-blue-700">
     Submit Request
@@ -416,7 +398,7 @@ const scrollToWithOffset = (id) => {
 
       <section id="contact-info" className="p-6 border rounded-2xl mt-10">
         <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
-        <p className="mb-2 text-gray-700">Email: <a href="mailto:summitservicesnyc@gmail.com" className="text-blue-600 hover:underline">summitservicesnyc@gmail.com
+        <p className="mb-2 text-gray-700">Email: <a href="e938d06acd5e30473274c352a30c646a" className="text-blue-600 hover:underline">summitservicesnyc@gmail.com
 </a></p>
         <p className="text-gray-700">Phone: <a href="tel:+16462502358" className="text-blue-600 hover:underline">(646) 250-2358</a></p>
       </section>
