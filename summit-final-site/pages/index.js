@@ -342,7 +342,7 @@ const scrollToWithOffset = (id) => {
         </div>
       </section>
   <section id="gallery" className="bg-white p-6 shadow-lg rounded-2xl mb-10 max-w-6xl mx-auto">
-  <h2 className="text-2xl font-bold mb-6">Gallery by Service</h2>
+  <h2 className="text-2xl font-bold mb-6">Gallery by Service</h2>``
 
 
   <ServiceGallery 
