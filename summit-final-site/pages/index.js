@@ -341,8 +341,9 @@ const scrollToWithOffset = (id) => {
 </article>
         </div>
       </section>
-  <section id="gallery" className="bg-white p-6 shadow-lg rounded-2xl mb-10">
-  <h2 className="text-2xl font-bold mb-4">Gallery by Service</h2>
+  <section id="gallery" className="bg-white p-6 shadow-lg rounded-2xl mb-10 max-w-6xl mx-auto">
+  <h2 className="text-2xl font-bold mb-6">Gallery by Service</h2>
+
 
   <ServiceGallery 
     title="Appliance Repair"
