@@ -44,8 +44,9 @@ export default function ServiceGallery({ title, images }) {
             <img
   src={selectedImage}
   alt={caption}
-  className="w-auto h-auto max-w-[90vw] max-h-[80vh] object-contain rounded-lg shadow-2xl"
+  className="max-w-full max-h-[85vh] rounded-lg shadow-2xl"
 />
+
 
             <p className="text-white text-center mt-4">{caption}</p>
           </div>
