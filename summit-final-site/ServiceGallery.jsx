@@ -41,11 +41,14 @@ export default function ServiceGallery({ title, images }) {
             >
               &times;
             </button>
-            <img
-  src={selectedImage}
-  alt={caption}
-  className="max-w-full max-h-[85vh] rounded-lg shadow-2xl"
-/>
+            <div key={idx} className="w-[220px] h-[220px] overflow-hidden rounded-xl shadow-md cursor-pointer hover:scale-105 transition">
+  <img
+    src={src}
+    alt={`${title} ${idx + 1}`}
+    className="w-full h-full object-cover"
+    onClick={() => handleImageClick(src, idx)}
+  />
+</div>
 
 
             <p className="text-white text-center mt-4">{caption}</p>
