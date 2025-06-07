@@ -33,28 +33,24 @@ export default function ServiceGallery({ title, images }) {
       </div>
 
       {selectedImage && (
-        <div className="fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center p-4">
-          <div className="relative">
-            <button
-              onClick={() => setSelectedImage(null)}
-              className="absolute top-2 right-2 text-white text-3xl font-bold hover:text-red-400"
-            >
-              &times;
-            </button>
-            <div key={idx} className="w-[220px] h-[220px] overflow-hidden rounded-xl shadow-md cursor-pointer hover:scale-105 transition">
-  <img
-    src={src}
-    alt={`${title} ${idx + 1}`}
-    className="w-full h-full object-cover"
-    onClick={() => handleImageClick(src, idx)}
-  />
-</div>
+  <div className="fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center p-4">
+    <div className="relative">
+      <button
+        onClick={() => setSelectedImage(null)}
+        className="absolute top-2 right-2 text-white text-3xl font-bold hover:text-red-400"
+      >
+        &times;
+      </button>
+      <img
+        src={selectedImage}
+        alt={caption}
+        className="max-w-full max-h-[85vh] rounded-lg shadow-2xl"
+      />
+      <p className="text-white text-center mt-4">{caption}</p>
+    </div>
+  </div>
+)}
 
-
-            <p className="text-white text-center mt-4">{caption}</p>
-          </div>
-        </div>
-      )}
     </div>
   );
 }
