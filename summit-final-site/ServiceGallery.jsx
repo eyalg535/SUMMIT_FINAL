@@ -18,13 +18,16 @@ export default function ServiceGallery({ title, images }) {
       <h3 className="text-xl font-bold mb-4">{title}</h3>
       <div className="flex flex-wrap gap-4">
   {images.map((src, idx) => (
-    <img
-      key={idx}
-      src={src}
-      alt={`${title} ${idx + 1}`}
-      className="w-[220px] h-[220px] object-cover rounded-xl shadow-md cursor-pointer hover:scale-105 transition"
-      onClick={() => handleImageClick(src, idx)}
-    />
+    <div className="w-full max-w-xs aspect-square overflow-hidden rounded-xl shadow-md cursor-pointer hover:scale-105 transition">
+  <img
+    key={idx}
+    src={src}
+    alt={`${title} ${idx + 1}`}
+    className="w-full h-full object-cover"
+    onClick={() => handleImageClick(src, idx)}
+  />
+</div>
+
   ))}
 </div>
 
