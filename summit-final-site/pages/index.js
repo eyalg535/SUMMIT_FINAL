@@ -344,7 +344,7 @@ const scrollToWithOffset = (id) => {
   <section id="gallery" className="bg-white p-6 shadow-lg rounded-2xl mb-10 max-w-6xl mx-auto">
   <h2 className="text-2xl font-bold mb-6">Gallery by Service</h2>``
 
-
+<div className="flex flex-col gap-12">
   <ServiceGallery 
     title="Appliance Repair"
     images={[
@@ -368,6 +368,7 @@ const scrollToWithOffset = (id) => {
       "/gallery/chimney/img2.jpg"
     ]}
   />
+  </div>
 </section>
 
 
